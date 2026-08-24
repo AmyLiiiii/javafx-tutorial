@@ -16,6 +16,16 @@
     -fx-text-fill: #37405f;
 }
 
+.empty-label {
+    -fx-background-color: linear-gradient(to bottom right, #f2f5ff, #dce6ff);
+    -fx-border-color: #b9c8ee;
+}
+
+.farewell-label {
+    -fx-background-color: linear-gradient(to bottom right, #fff0cf, #ffc9a3);
+    -fx-border-color: #eea76a;
+}
+
 #displayPictureFrame {
     -fx-background-color: transparent;
     -fx-background-radius: 50%;

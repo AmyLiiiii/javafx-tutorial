@@ -63,9 +63,23 @@ public class DialogBox extends HBox {
         return new DialogBox(text, image);
     }
 
-    public static DialogBox getSwellDialog(String text, Image image) {
+    private void changeDialogStyle(String responseType) {
+        switch (responseType) {
+        case "empty":
+            dialog.getStyleClass().add("empty-label");
+            break;
+        case "farewell":
+            dialog.getStyleClass().add("farewell-label");
+            break;
+        default:
+            // Keep the default reply-label style.
+        }
+    }
+
+    public static DialogBox getSwellDialog(String text, Image image, String responseType) {
         DialogBox dialogBox = new DialogBox(text, image);
         dialogBox.flip();
+        dialogBox.changeDialogStyle(responseType);
         return dialogBox;
     }
 }

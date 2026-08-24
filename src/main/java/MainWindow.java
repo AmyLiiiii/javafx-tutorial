@@ -44,9 +44,10 @@ public class MainWindow extends AnchorPane {
     private void handleUserInput() {
         String input = userInput.getText();
         String response = swell.getResponse(input);
+        String responseType = swell.getResponseType();
         dialogContainer.getChildren().addAll(
                 DialogBox.getUserDialog(input, userImage),
-                DialogBox.getSwellDialog(response, swellImage)
+                DialogBox.getSwellDialog(response, swellImage, responseType)
         );
         userInput.clear();
     }
