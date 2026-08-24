@@ -18,6 +18,7 @@
         "Marker Felt",
         "Arial Rounded MT Bold",
         "Arial";
+    -fx-prompt-text-fill: #93a9c7;
 }
 
 .text-field:focused {
