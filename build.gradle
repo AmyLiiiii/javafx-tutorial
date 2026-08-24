@@ -41,6 +41,6 @@ java {
 }
 
 shadowJar {
-    archiveBaseName = "javafx-tutorial-duke"
+    archiveBaseName = "javafx-tutorial-swell"
     archiveClassifier = null
 }
