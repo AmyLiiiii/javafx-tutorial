@@ -20,7 +20,7 @@ public class Main extends Application {
             Scene scene = new Scene(root);
 
             stage.setTitle("Swell");
-            stage.setResizable(false);
+            // stage.setResizable(false);
             stage.setMinHeight(600.0);
             stage.setMinWidth(400.0);
             stage.setScene(scene);
