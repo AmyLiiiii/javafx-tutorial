@@ -5,6 +5,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.AudioClip;
 
 /**
  * Controller for the main GUI.
@@ -23,6 +24,8 @@ public class MainWindow extends AnchorPane {
 
     private Image userImage = new Image(this.getClass().getResourceAsStream("/images/Moon.png"));
     private Image swellImage = new Image(this.getClass().getResourceAsStream("/images/Star.png"));
+    private AudioClip sendSound = new AudioClip(
+            this.getClass().getResource("/sounds/send.wav").toExternalForm());
 
     @FXML
     public void initialize() {
@@ -49,6 +52,7 @@ public class MainWindow extends AnchorPane {
                 DialogBox.getUserDialog(input, userImage),
                 DialogBox.getSwellDialog(response, swellImage, responseType)
         );
+        sendSound.play();
         userInput.clear();
     }
 }
