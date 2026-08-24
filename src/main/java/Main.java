@@ -16,8 +16,8 @@ public class Main extends Application {
     private Button sendButton;
     private Scene scene;
 
-    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/Star.png"));
-    private Image swellImage = new Image(this.getClass().getResourceAsStream("/images/Moon.png"));
+    private Image userImage = new Image(this.getClass().getResourceAsStream("/images/Moon.png"));
+    private Image swellImage = new Image(this.getClass().getResourceAsStream("/images/Star.png"));
     private Swell swell = new Swell();
 
     @Override
