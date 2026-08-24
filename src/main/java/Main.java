@@ -82,8 +82,8 @@ public class Main extends Application {
         String userText = userInput.getText();
         String swellText = swell.getResponse(userInput.getText());
         dialogContainer.getChildren().addAll(
-                new DialogBox(userText, userImage),
-                new DialogBox(swellText, swellImage)
+                DialogBox.getUserDialog(userText, userImage),
+                DialogBox.getSwellDialog(swellText, swellImage)
         );
         userInput.clear();
     }
