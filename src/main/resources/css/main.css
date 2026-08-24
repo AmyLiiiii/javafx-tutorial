@@ -13,7 +13,11 @@
     -fx-border-color: #cad6ee;
     -fx-border-radius: 12px;
     -fx-border-width: 1.2px;
-    -fx-font: 16px "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold", "Arial";
+    -fx-font:
+        16px "Comic Sans MS",
+        "Marker Felt",
+        "Arial Rounded MT Bold",
+        "Arial";
 }
 
 .text-field:focused {
@@ -24,7 +28,11 @@
 .button {
     -fx-background-color: accent-color;
     -fx-background-radius: 12px;
-    -fx-font: bold 15px "Comic Sans MS", "Marker Felt", "Arial Rounded MT Bold", "Arial";
+    -fx-font:
+        bold 15px "Comic Sans MS",
+        "Marker Felt",
+        "Arial Rounded MT Bold",
+        "Arial";
     -fx-text-fill: #24324f;
 }
 
@@ -39,7 +47,10 @@
     -fx-effect: dropshadow(gaussian, rgba(196, 139, 33, 0.18), 4, 0.2, 0, 1);
 }
 
-.scroll-pane,
+.scroll-pane {
+    -fx-background-color: rgba(226, 243, 255, 0.3);
+}
+
 .scroll-pane .viewport {
     -fx-background-color: transparent;
 }
