@@ -17,6 +17,8 @@ public class Main extends Application {
     private Scene scene;
 
     private Image userImage = new Image(this.getClass().getResourceAsStream("/images/Star.png"));
+    private Image swellImage = new Image(this.getClass().getResourceAsStream("/images/Moon.png"));
+    private Swell swell = new Swell();
 
     @Override
     public void start(Stage stage) {
@@ -77,7 +79,12 @@ public class Main extends Application {
      * user input after processing.
      */
     private void handleUserInput() {
-        dialogContainer.getChildren().addAll(new DialogBox(userInput.getText(), userImage));
+        String userText = userInput.getText();
+        String swellText = swell.getResponse(userInput.getText());
+        dialogContainer.getChildren().addAll(
+                new DialogBox(userText, userImage),
+                new DialogBox(swellText, swellImage)
+        );
         userInput.clear();
     }
 }
